@@ -46,10 +46,10 @@ public class Main {
 ```
 
 
-<h1>
+<h1 align=center>
   Exercicio 7
 </h1>
-<h2>
+<h2 align=center>
   Classes do exercício 2
 </h2>
 
