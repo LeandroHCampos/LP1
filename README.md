@@ -93,7 +93,7 @@ public class Main {
 
 
 <h1 align=center>
-  Exercicio 7
+  Exercicio 8
 </h1>
 <h2 align=center>
   Classes do exercício 2
