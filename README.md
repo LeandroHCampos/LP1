@@ -10,6 +10,30 @@
 </p>
 <img width="1200" height="272" alt="Diagrama em branco (4)" src="https://github.com/user-attachments/assets/57d7b564-9a7f-4a3c-a1ec-63264b1a4c14" />
 <h1 align="center">
+  Exercício 3 - Imagem Vik Muniz.
+</h1>
+<p align="center">
+  Track brawl 
+</p>
+<p align="center">
+  <img width="628" height="787" alt="Captura de tela 2025-09-09 223324" src="https://github.com/user-attachments/assets/36bb3308-7a63-44d9-8a39-5e444118d809" />
+</p>
+<p align="center">
+  <img width="1189" height="249" alt="Diagrama em branco (5)" src="https://github.com/user-attachments/assets/079a9861-2483-4a17-b3df-ee3a7e92fe2c" />
+</p>
+<h1 align="center">
+  Exercício 4 - Imagem Doodle.
+</h1>
+<p align="center">
+  
+</p>
+<p align="center">
+  
+</p>
+<p align="center">
+  
+</p>
+<h1 align="center">
   Exercício 7 - Classe Java para Calculo de média.
 </h1>
 
