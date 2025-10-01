@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane prefHeight="288.0" prefWidth="318.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exercicio2.Ex2.Ex2Controller">
+    <tabs>
+        <Tab text="Horizonte">
+            <VBox alignment="CENTER" prefHeight="378.0" prefWidth="600.0" style="-fx-background-color: WHITE; -fx-padding: 10px;" BorderPane.alignment="CENTER">
+                <Label alignment="CENTER" prefHeight="0.0" prefWidth="278.0" text="Horizonte" textAlignment="CENTER">
+                    <font>
+                        <Font size="46.0" />
+                    </font>
+                </Label>
+                <HBox alignment="TOP_CENTER" prefHeight="32.0" prefWidth="600.0">
+                    <Label prefWidth="100" text="Qual a cor?" />
+                    <ChoiceBox fx:id="choiceBoxCor" prefWidth="150.0" />
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="33.0" prefWidth="600.0">
+                    <Label prefWidth="100" text="Está Visivel?" />
+                    <CheckBox fx:id="checkBoxVisivel" mnemonicParsing="false" prefWidth="150" />
+                </HBox>
+                <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="209.0" prefHeight="33.0" prefWidth="600.0">
+                    <Label prefWidth="100" text="Brilhando?" />
+                    <CheckBox fx:id="checkBoxLuzes" mnemonicParsing="false" prefWidth="150" />
+                </HBox>
+                <Button onAction="#cadastrarHorizonte" text="Enviar" />
+            </VBox>
+        </Tab>
+        <Tab text="Apartamento">
+            <VBox alignment="CENTER" prefHeight="378.0" prefWidth="394.0" style="-fx-background-color: WHITE; -fx-padding: 10px;" BorderPane.alignment="CENTER">
+                <children>
+                    <Label alignment="CENTER" prefHeight="0.0" prefWidth="278.0" text="Apartamento" textAlignment="CENTER">
+                        <font>
+                            <Font size="46.0" />
+                        </font>
+                    </Label>
+                    <HBox alignment="TOP_CENTER" prefHeight="32.0" prefWidth="600.0">
+                        <children>
+                            <Label prefWidth="100" text="Qual o numero?:" />
+                            <TextField fx:id="txtNumero" />
+                        </children>
+                    </HBox>
+                    <HBox alignment="TOP_CENTER" prefHeight="33.0" prefWidth="600.0">
+                        <children>
+                            <Label prefWidth="100" text="Vista pra onde?:" />
+                            <TextField fx:id="txtVista" />
+                        </children>
+                    </HBox>
+                    <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="209.0" prefHeight="33.0" prefWidth="600.0">
+                        <children>
+                            <Label prefWidth="100" text="É silencioso?:" />
+                            <CheckBox fx:id="checkBoxSilencioso" mnemonicParsing="false" prefWidth="150" />
+                        </children>
+                    </HBox>
+                    <Button onAction="#cadastrarApartamento" text="Enviar" />
+                </children>
+            </VBox>
+
+        </Tab>
+        <Tab text="Coração">
+            <VBox alignment="CENTER" prefHeight="378.0" prefWidth="600.0" style="-fx-background-color: WHITE; -fx-padding: 10px;" BorderPane.alignment="CENTER">
+                <children>
+                    <Label alignment="CENTER" prefHeight="0.0" prefWidth="278.0" text="Coração" textAlignment="CENTER">
+                        <font>
+                            <Font size="46.0" />
+                        </font>
+                    </Label>
+                    <HBox alignment="TOP_CENTER" prefHeight="32.0" prefWidth="600.0">
+                        <children>
+                            <Label prefWidth="100" text="Está batendo?:" />
+                            <CheckBox fx:id="checkBoxBatendo" mnemonicParsing="false" prefWidth="150" />
+                        </children>
+                    </HBox>
+                    <HBox alignment="TOP_CENTER" prefHeight="33.0" prefWidth="600.0">
+                        <children>
+                            <Label prefWidth="100" text="Nivel de saudade:" />
+                     <Slider fx:id="sliderSaudade" />
+                        </children>
+                    </HBox>
+                    <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="209.0" prefHeight="33.0" prefWidth="600.0">
+                        <children>
+                            <Label prefWidth="100" text="Machucado?" />
+                            <CheckBox fx:id="checkBoxMachucado" mnemonicParsing="false" prefWidth="150" />
+                        </children>
+                    </HBox>
+                    <Button onAction="#cadastrarCoracao" text="Enviar" />
+                </children>
+            </VBox>
+
+        </Tab>
+    </tabs>
+</TabPane>

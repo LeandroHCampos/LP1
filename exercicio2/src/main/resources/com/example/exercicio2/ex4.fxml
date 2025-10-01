@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exercicio2.Ex4.Ex4Controller">
+    <tabs>
+        <Tab text="Cachorro">
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: WHITE; -fx-padding: 10px;" BorderPane.alignment="CENTER">
+                <Label alignment="CENTER" prefHeight="0.0" prefWidth="278.0" text="Cachorro" textAlignment="CENTER">
+                    <font>
+                        <Font size="46.0" />
+                    </font>
+                </Label>
+                <HBox alignment="TOP_CENTER" prefHeight="32.0" prefWidth="600.0">
+                    <Label prefWidth="100" text="Nome" />
+                    <TextField fx:id="textFieldNome" prefWidth="150.0" />
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="33.0" prefWidth="600.0">
+                    <Label prefWidth="100" text="Cor" />
+                    <TextField fx:id="textFieldCorCachorro" prefWidth="150" />
+                </HBox>
+                <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="209.0" prefHeight="33.0" prefWidth="600.0">
+                    <Label prefWidth="100" text="Raça" />
+                    <TextField fx:id="textFieldRaca" prefWidth="150" />
+                </HBox>
+                <Button onAction="#cadastrarCachorro" text="Enviar" />
+            </VBox>
+        </Tab>
+        <Tab text="Cobra">
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: WHITE; -fx-padding: 10px;" BorderPane.alignment="CENTER">
+                <Label alignment="CENTER" prefHeight="0.0" prefWidth="278.0" text="Cobra" textAlignment="CENTER">
+                    <font>
+                        <Font size="46.0" />
+                    </font>
+                </Label>
+                <HBox alignment="TOP_CENTER" prefHeight="32.0" prefWidth="600.0">
+                    <Label prefWidth="100" text="Espécie" />
+                    <TextField fx:id="textFieldEspecie" prefWidth="150.0" />
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="33.0" prefWidth="600.0">
+                    <Label prefWidth="100" text="Comprimento" />
+                    <TextField fx:id="textFieldComprimento" prefWidth="150" />
+                </HBox>
+                <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="209.0" prefHeight="33.0" prefWidth="600.0">
+                    <Label prefWidth="100" text="É venenosa?" />
+                    <CheckBox fx:id="checkBoxVenenosa" mnemonicParsing="false" prefWidth="150" />
+                </HBox>
+                <Button onAction="#cadastrarCobra" text="Enviar" />
+            </VBox>
+        </Tab>
+        <Tab text="Lampada">
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: WHITE; -fx-padding: 10px;" BorderPane.alignment="CENTER">
+                <Label alignment="CENTER" prefHeight="0.0" prefWidth="278.0" text="Lampada" textAlignment="CENTER">
+                    <font>
+                        <Font size="46.0" />
+                    </font>
+                </Label>
+                <HBox alignment="TOP_CENTER" prefHeight="32.0" prefWidth="600.0">
+                    <Label prefWidth="100" text="Cor" />
+                    <TextField fx:id="textFieldCor" prefWidth="150.0" />
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="33.0" prefWidth="600.0">
+                    <Label prefWidth="100" text="Potencia" />
+                    <TextField fx:id="textFieldPotencia" prefWidth="150" />
+                </HBox>
+                <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="209.0" prefHeight="33.0" prefWidth="600.0">
+                    <Label prefWidth="100" text="Esta ligada?" />
+                    <CheckBox fx:id="checkBoxLigada" mnemonicParsing="false" prefWidth="150" />
+                </HBox>
+                <Button onAction="#cadastrarLampada" text="Enviar" />
+            </VBox>
+        </Tab>
+    </tabs>
+</TabPane>

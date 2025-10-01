@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exercicio2.MainController">
+    <center>
+        <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0"
+              style="-fx-background-color: WHITE; -fx-padding: 20px;"
+              BorderPane.alignment="CENTER" spacing="15">
+
+            <Label text="Atividade E1"
+                   style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+            <Label text="Leandro Henrique de Campos Silva"
+                   style="-fx-font-size: 16px; -fx-text-fill: #333333;"/>
+
+            <Separator prefWidth="500.0"/>
+
+            <Label prefWidth="500.0" wrapText="true"
+                   style="-fx-font-size: 14px; -fx-text-fill: #444444;"
+                   text="Utilizando as classes elaboradas na atividade E1 - parte 1, item 8,
+elabore interfaces gráficas para ler atributos.
+As interfaces deverão possuir um botão que, ao ser clicado,
+instancia o objeto e o registra em um arquivo CSV."/>
+
+        </VBox>
+    </center>
+
+    <left>
+        <VBox prefHeight="400.0" prefWidth="63.0" spacing="10" style="-fx-background-color: #222; -fx-padding: 10px;" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="btnEx1" style="-fx-background-color: #555; -fx-text-fill: white; -fx-font-size: 10px;                        -fx-background-radius: 10; -fx-border-radius: 10; -fx-padding: 6px 10px;" text="EX 1" />
+                <Button fx:id="btnEx2" style="-fx-background-color: #555; -fx-text-fill: white; -fx-font-size: 10px;                        -fx-background-radius: 10; -fx-border-radius: 10; -fx-padding: 6px 10px;" text="EX 2" />
+                <Button fx:id="btnEx3" style="-fx-background-color: #555; -fx-text-fill: white; -fx-font-size: 10px;                        -fx-background-radius: 10; -fx-border-radius: 10; -fx-padding: 6px 10px;" text="EX 3" />
+                <Button fx:id="btnEx4" style="-fx-background-color: #555; -fx-text-fill: white; -fx-font-size: 10px;                        -fx-background-radius: 10; -fx-border-radius: 10; -fx-padding: 6px 10px;" text="EX 4" />
+            </children>
+        </VBox>
+    </left>
+</BorderPane>

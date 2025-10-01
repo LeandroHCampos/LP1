@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exercicio2.Ex5.Ex5Controller">
+    <tabs>
+        <Tab text="Bola">
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: WHITE; -fx-padding: 10px;" BorderPane.alignment="CENTER">
+                <Label alignment="CENTER" prefWidth="278" text="Bola" textAlignment="CENTER">
+                    <font>
+                        <Font size="46.0" />
+                    </font>
+                </Label>
+                <HBox alignment="TOP_CENTER" prefHeight="32.0" prefWidth="600.0">
+                    <Label prefWidth="100" text="Marca" />
+                    <TextField fx:id="textFieldMarca" prefWidth="150.0" />
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="32.0" prefWidth="600.0">
+                    <Label prefWidth="100" text="Cor" />
+                    <TextField fx:id="textFieldCor" prefWidth="150.0" />
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="32.0" prefWidth="600.0">
+                    <Label prefWidth="100" text="Circunferencia" />
+                    <TextField fx:id="textFieldCircunferencia" prefWidth="150.0" />
+                </HBox>
+                <Button onAction="#cadastrarBola" text="Enviar" />
+            </VBox>
+        </Tab>
+        <Tab text="Grama">
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: WHITE; -fx-padding: 10px;" BorderPane.alignment="CENTER">
+                <Label alignment="CENTER" prefWidth="278" text="Grama">
+                    <font>
+                        <Font size="46.0" />
+                    </font>
+                </Label>
+                <HBox alignment="TOP_CENTER" prefHeight="32.0" prefWidth="600.0">
+                    <Label prefWidth="100" text="Tipo" />
+                    <TextField fx:id="textFieldTipo" prefWidth="150.0" />
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="32.0" prefWidth="600.0">
+                    <Label prefWidth="100" text="Altura" />
+                    <TextField fx:id="textFieldAltura" prefWidth="150.0" />
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="32.0" prefWidth="600.0">
+                    <Label prefWidth="100" text="Está molhada?" />
+                    <CheckBox fx:id="checkBoxMolhada" prefWidth="150.0" mnemonicParsing="false"/>
+                </HBox>
+                <Button onAction="#cadastrarGrama" text="Enviar" />
+            </VBox>
+        </Tab>
+        <Tab text="Jogador">
+            <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: WHITE; -fx-padding: 10px;" BorderPane.alignment="CENTER">
+                <Label alignment="CENTER" prefWidth="278" text="Jogador">
+                    <font>
+                        <Font size="46.0" />
+                    </font>
+                </Label>
+                <HBox alignment="TOP_CENTER" prefHeight="32.0" prefWidth="600.0">
+                    <Label prefWidth="100" text="Nome:" />
+                    <TextField fx:id="textFieldNome" prefWidth="150.0" />
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="32.0" prefWidth="600.0">
+                    <Label prefWidth="100" text="Numero:" />
+                    <TextField fx:id="textFieldNumero" prefWidth="150.0" />
+                </HBox>
+                <HBox alignment="TOP_CENTER" prefHeight="32.0" prefWidth="600.0">
+                    <Label prefWidth="100" text="Posição:" />
+                    <TextField fx:id="textFieldPosicao" prefWidth="150.0" />
+                </HBox>
+                <Button onAction="#cadastrarJogador" text="Enviar" />
+            </VBox>
+        </Tab>
+    </tabs>
+</TabPane>
