@@ -17,15 +17,24 @@ public class Ex5Controller {
     private void cadastrarBola() {
         Bola bola = new Bola(textFieldMarca.getText(),textFieldCor.getText(),Double.parseDouble(textFieldCircunferencia.getText()));
         bola.salvar("bola.csv");
+        textFieldMarca.setText("");
+        textFieldCor.setText("");
+        textFieldCircunferencia.setText("");
     }
     @FXML
     private void cadastrarGrama(){
         Grama grama = new Grama(textFieldTipo.getText(),Double.parseDouble(textFieldAltura.getText()),checkBoxMolhada.isSelected());
         grama.salvar("grama.csv");
+        textFieldTipo.setText("");
+        textFieldAltura.setText("");
+        checkBoxMolhada.setSelected(false);
     }
     @FXML
     private void cadastrarJogador(){
-    Jogador jogador = new Jogador(textFieldNome.getText(),Integer.parseInt(textFieldNumero.getText()),textFieldPosicao.getText());
-    jogador.salvar("jogador.csv");
+        Jogador jogador = new Jogador(textFieldNome.getText(),Integer.parseInt(textFieldNumero.getText()),textFieldPosicao.getText());
+        jogador.salvar("jogador.csv");
+        textFieldNome.setText("");
+        textFieldNumero.setText("");
+        textFieldPosicao.setText("");
     }
 }

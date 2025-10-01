@@ -15,15 +15,15 @@
                     </font>
                 </Label>
                 <HBox alignment="TOP_CENTER" prefHeight="32.0" prefWidth="600.0">
-                    <Label prefWidth="100" text="Qual a cor?" />
+                    <Label prefWidth="100" text="Tipo:" />
                     <TextField fx:id="textFieldChapeu" prefWidth="150.0" />
                 </HBox>
                 <HBox alignment="TOP_CENTER" prefHeight="33.0" prefWidth="600.0">
-                    <Label prefWidth="100" text="Está Visivel?" />
+                    <Label prefWidth="100" text="Cor:" />
                     <TextField fx:id="textFieldCor" prefWidth="150" />
                 </HBox>
                 <HBox alignment="TOP_CENTER" layoutX="10.0" layoutY="209.0" prefHeight="33.0" prefWidth="600.0">
-                    <Label prefWidth="100" text="Possui Luzes?" />
+                    <Label prefWidth="100" text="Material:" />
                     <TextField fx:id="textFieldTipo" prefWidth="150" />
                 </HBox>
                 <Button onAction="#cadastrarChapeu" text="Enviar" />

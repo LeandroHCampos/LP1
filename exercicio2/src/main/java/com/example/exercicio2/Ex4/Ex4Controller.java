@@ -19,17 +19,26 @@ public class Ex4Controller {
     private void cadastrarCachorro(){
         Cachorro cachorro = new Cachorro(textFieldNome.getText(), textFieldCorCachorro.getText(), textFieldRaca.getText());
         cachorro.salvar("cachorro.csv");
+        textFieldNome.setText("");
+        textFieldCorCachorro.setText("");
+        textFieldRaca.setText("");
     }
     @FXML
     private void cadastrarCobra(){
         Cobra cobra = new Cobra(textFieldEspecie.getText(),Double.parseDouble(textFieldComprimento.getText()),checkBoxVenenosa.isSelected());
         cobra.salvar("cobra.csv");
+        textFieldEspecie.setText("");
+        textFieldComprimento.setText("");
+        checkBoxVenenosa.setSelected(false);
     }
 
     @FXML
     private void cadastrarLampada(){
-        Lampada lampada = new Lampada(textFieldCor.getText(),Integer.parseInt(textFieldPotencia.getText()),checkBoxVenenosa.isSelected());
+        Lampada lampada = new Lampada(textFieldCor.getText(),Integer.parseInt(textFieldPotencia.getText()),checkBoxLigada.isSelected());
         lampada.salvar("lampada.csv");
+        textFieldCor.setText("");
+        textFieldPotencia.setText("");
+        checkBoxLigada.setSelected(false);
     }
 
 

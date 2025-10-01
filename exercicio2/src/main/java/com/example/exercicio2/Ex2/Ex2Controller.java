@@ -6,9 +6,6 @@ import javafx.scene.control.*;
 
 public class Ex2Controller {
     @FXML
-    private Label labelSalvo;
-
-    @FXML
     private CheckBox checkBoxLuzes,checkBoxVisivel,checkBoxSilencioso, checkBoxBatendo,checkBoxMachucado;
 
     @FXML
@@ -30,18 +27,25 @@ public class Ex2Controller {
     private void cadastrarHorizonte(){
         Horizonte horizonte = new Horizonte(choiceBoxCor.getValue(),checkBoxLuzes.isSelected(),checkBoxVisivel.isSelected());
         horizonte.salvar("horizonte.csv");
+        checkBoxLuzes.setSelected(false);
+        checkBoxVisivel.setSelected(false);
     }
 
     @FXML
     private void cadastrarApartamento(){
         Apartamento apartamento = new Apartamento(Integer.parseInt(txtNumero.getText()), txtVista.getText(),checkBoxSilencioso.isSelected());
         apartamento.salvar("apartamento.csv");
+        txtNumero.setText("");
+        txtVista.setText("");
+        checkBoxSilencioso.setSelected(false);
     }
 
     @FXML
     private void cadastrarCoracao(){
         Coracao coracao = new Coracao(checkBoxBatendo.isSelected(), (int) sliderSaudade.getValue(), checkBoxMachucado.isSelected());
         coracao.salvar("coracao.csv");
-
+        checkBoxBatendo.setSelected(false);
+        sliderSaudade.setValue(0);
+        checkBoxMachucado.setSelected(false);
     }
 }

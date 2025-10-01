@@ -16,15 +16,24 @@ public class Ex3Controller {
     private void cadastrarChapeu(){
         Chapeu chapeu = new  Chapeu(textFieldChapeu.getText(), textFieldCor.getText(), textFieldTipo.getText());
         chapeu.salvar("chapeu.csv");
+        textFieldChapeu.setText("");
+        textFieldCor.setText("");
+        textFieldTipo.setText("");
     }
     @FXML
     private void cadastrarPessoas(){
         PessoasNaImagem pessoas = new PessoasNaImagem(txtRoupa.getText(),Integer.parseInt(txtPessoas.getText()),checkBoxSegurando.isSelected());
         pessoas.salvar("pessoas.csv");
+        txtRoupa.setText("");
+        txtPessoas.setText("");
+        checkBoxSegurando.setSelected(false);
     }
     @FXML
     private void cadastrarTrilho(){
         TrilhoDoTrem trilho = new TrilhoDoTrem(txtMaterial.getText(), Boolean.getBoolean(checkBoxAlavanca.getText()), Integer.parseInt(txtComprimento.getText()));
         trilho.salvar("trilho.csv");
+        txtMaterial.setText("");
+        txtComprimento.setText("");
+        checkBoxAlavanca.setSelected(false);
     }
 }
